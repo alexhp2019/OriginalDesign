@@ -3,9 +3,10 @@ void setup()
   size(800,450);
 }
 void draw()
-
 {
- for (int i = 0; i < 1; i++) {
+  int x = 0;
+  
+ if (x < 10) {
   float a = random(-600, 900);
   float b = random(-600, 900);
   float c = random(-600, 900);
@@ -19,5 +20,6 @@ void draw()
   ellipse(a,a,a,a);
   delay(50);
 }
+ x = x + 1;
 
 }
