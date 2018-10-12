@@ -2,11 +2,11 @@ void setup()
 {
   size(800,450);
 }
+int x = 0;
 void draw()
 {
-  int x = 0;
-  
- if (x < 10) {
+  x = x+1;
+ if (x < 500) {
   float a = random(-600, 900);
   float b = random(-600, 900);
   float c = random(-600, 900);
@@ -18,8 +18,9 @@ void draw()
   noFill();
   quad(a, b, c, d, e, f, g, h);
   ellipse(a,a,a,a);
-  delay(50);
+  ellipse(a,a,a,a);
+  delay(0);
 }
- x = x + 1;
+ 
 
 }
